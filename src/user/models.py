@@ -1,3 +1,5 @@
+import os
+
 from django import forms
 from django.db import models
 from django.db.models.deletion import CASCADE
@@ -6,6 +8,8 @@ from twilio.rest import Client
 # Create your models here.
 
 
+account_sid = os.getenv('ACCOUNT_SID', '')
+auth_token = os.getenv('AUTH_TOKEN', '')
 client = Client(account_sid, auth_token) 
 
 class Client(models.Model):
