@@ -5,8 +5,7 @@ from twilio.rest import Client
 
 # Create your models here.
 
-account_sid = 'AC4474e42eb226a7a0a8e9133a8b17a82c' 
-auth_token = '943417ead37eb6dc21a6160ac11ac830' 
+
 client = Client(account_sid, auth_token) 
 
 class Client(models.Model):
